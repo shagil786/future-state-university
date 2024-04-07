@@ -1,0 +1,107 @@
+.container {
+    background-color: transparent;
+    color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(20px);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.leftItem {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    padding: 16px 20px;
+    width: 100%;
+}
+
+.leftItem img {
+    width: 80px;
+    cursor: pointer;
+}
+
+.navsStyle {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    font-size: 20px;
+}
+
+.navsStyle a {
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    z-index: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navsStyle a::after {
+    background: #FFA500;
+    border-radius: 16px;
+    bottom: 1px;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 0;
+    position: relative;
+    transition: all .3s ease-out 0s;
+    width: 0;
+    z-index: -1;
+}
+
+.navsStyle a:hover::after {
+    width: 100%;
+    font-weight: 500;
+}
+
+.rightItem {
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.rightItem .enterButton {
+    padding: 10px 20px;
+    background-color: #CC5500;
+    border-radius: 10px;
+    transition: all .3s ease-out 0s;
+    z-index: 1;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    width: fit-content;
+    cursor: pointer;
+
+}
+
+.rightItem .enterButton .icon {
+    font-size: 20px;
+}
+
+.rightItem .enterButton:hover {
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    background-color: #8B4000;
+    border: #8B4000;
+    font-weight: 700;
+}
+
+@media(max-width: 767px) {
+    .navsStyle {
+        display: none;
+
+    }
+
+    .rightItem .enterButton {
+        padding: 10px;
+    }
+}

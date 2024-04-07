@@ -1,0 +1,92 @@
+.content {
+    background-image: url('../../assets/Images/backgroundImage1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    background-blend-mode: color-dodge;
+    transition: all .3s ease-out 0s;
+}
+
+.container[data-active="active"] {
+    background: #fff;
+}
+
+.content:hover {
+    scale: 1.11;
+}
+
+.container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(20px) saturate(180%);
+    transition: all .3s ease-out 0s;
+}
+
+.wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    color: #fff;
+}
+
+.iframeStyle {
+    width: 100%;
+    padding: 40px;
+}
+
+.iframeStyle iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.futureStyle {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.uniStyle {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin: 10px 0px 10px 0px;
+}
+
+.aboutStyle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.buttonBuild {
+    background-color: #6d20c5d7;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    transition: all .3s ease-out 0s;
+    filter: drop-shadow(0px 0px 10px #8B4000);
+    border: 1px solid #8B4000;
+    cursor: pointer;
+}
+
+.buttonBuild:hover {
+    transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    background-color: #6d20c5d7;
+    border: #6d20c5d7;
+    font-weight: 700;
+}

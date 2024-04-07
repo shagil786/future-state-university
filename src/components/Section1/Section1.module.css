@@ -1,0 +1,72 @@
+.container {
+    background-image: url('../../assets/Images/backgroundImage.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: "Titillium Web",
+        sans-serif;
+}
+
+.content .futureStyle {
+    font-size: 1.8rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+}
+
+.content .uniStyle {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5rem;
+}
+
+.content .aboutStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.borderStyle:not(:last-of-type) {
+    border: 1px solid #fff;
+    height: 16px;
+}
+
+@media (max-width: 767px) {
+    .content .uniStyle {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .5rem;
+    }
+
+    .content .aboutStyle {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 10px;
+    }
+
+    .content .futureStyle {
+        font-size: 1.4rem;
+        letter-spacing: .6rem;
+        text-transform: uppercase;
+    }
+}
